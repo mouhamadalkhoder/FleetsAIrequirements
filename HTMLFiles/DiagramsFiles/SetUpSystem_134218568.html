@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title> Set up system - Tue May 25 11:16:38 2021
+  </title>
+	<script>
+		function open_window(url){
+			remote=window.open(url,"remotewin", "WIDTH=400 , HEIGHT = 400 , scrollbars='auto', resizable=1");
+			remote.focus();
+		}
+		
+		function open_Search_window(url){
+			remote=window.open(url,"remotewin", "WIDTH=450 , HEIGHT = 400 , scrollbars=0, resizable=0");
+			remote.focus();
+		}
+		
+		function Related_Objectives(a,b){
+			var x = document.getElementById(a);
+			x.src = b;
+		}
+		
+		function restoreCols(){
+			parent.document.getElementById("main").cols="200,*";
+			parent.document.getElementById("maintree").rows="20,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/DiagramsTree.html"
+		}
+		 
+		function changeCols(){
+			parent.document.getElementById("main").cols="25,*";
+			parent.document.getElementById("maintree").rows="0,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/CollapsedTree.html";
+		}
+	</script>
+	<link rel="stylesheet" href="../../Styles/Styles.css" type="text/css">
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+</head>
+	<DIV ALIGN="left">
+		<body>
+			<MAP NAME="SetUpSystem">
+
+				<AREA SHAPE="RECT" COORDS="560,340,670,390" title="UseCase: Set up delivery settings">
+
+				<AREA SHAPE="RECT" COORDS="390,400,510,460" title="UseCase: Set up Profile and settings">
+
+				<AREA SHAPE="RECT" COORDS="200,60,750,500" title="Subsystem: Set up system">
+
+				<AREA SHAPE="RECT" COORDS="550,180,660,230" title="UseCase: Adds customers">
+
+				<AREA SHAPE="RECT" COORDS="560,260,670,310" title="UseCase: Adds drivers">
+
+				<AREA SHAPE="RECT" COORDS="260,260,370,310" title="UseCase: Signs-in">
+
+				<AREA SHAPE="RECT" COORDS="470,120,580,170" title="UseCase: Sing-up">
+
+				<AREA SHAPE="RECT" COORDS="70,250,130,340" title="Actor: Driver">
+
+				<AREA SHAPE="RECT" COORDS="810,200,870,290" title="Actor: Fleet Manager">
+			</MAP>
+			<center>
+				<p class="title" style="font-size:16px; margin:0px">
+					<a href="SetUpSystem_134218568.html" title="Click here to see full diagram" target="Body">Set up system</a>
+				</p>
+			</center>
+			<IMG SRC="134218568.jpeg" USEMAP="#SetUpSystem" title="Set up system Diagram" border="noborder" target="Body">
+		</DIV>
+	</body>
+</html>
+<script type="text/javascript">
+    top.window.document.title = document.title;
+</script>

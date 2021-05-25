@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title> Receive order and dispatch tasks - Tue May 25 11:16:38 2021
+  </title>
+	<script>
+		function open_window(url){
+			remote=window.open(url,"remotewin", "WIDTH=400 , HEIGHT = 400 , scrollbars='auto', resizable=1");
+			remote.focus();
+		}
+		
+		function open_Search_window(url){
+			remote=window.open(url,"remotewin", "WIDTH=450 , HEIGHT = 400 , scrollbars=0, resizable=0");
+			remote.focus();
+		}
+		
+		function Related_Objectives(a,b){
+			var x = document.getElementById(a);
+			x.src = b;
+		}
+		
+		function restoreCols(){
+			parent.document.getElementById("main").cols="200,*";
+			parent.document.getElementById("maintree").rows="20,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/DiagramsTree.html"
+		}
+		 
+		function changeCols(){
+			parent.document.getElementById("main").cols="25,*";
+			parent.document.getElementById("maintree").rows="0,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/CollapsedTree.html";
+		}
+	</script>
+	<link rel="stylesheet" href="../../Styles/Styles.css" type="text/css">
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+</head>
+	<DIV ALIGN="left">
+		<body>
+			<MAP NAME="ReceiveOrderAndDispatchTasks">
+
+				<AREA SHAPE="RECT" COORDS="790,130,850,220" title="Actor: System">
+
+				<AREA SHAPE="RECT" COORDS="110,100,170,190" title="Actor: End-customer">
+
+				<AREA SHAPE="RECT" COORDS="110,270,170,360" title="Actor: Driver">
+
+				<AREA SHAPE="RECT" COORDS="790,280,850,370" title="Actor: Fleet Manager">
+
+				<AREA SHAPE="RECT" COORDS="220,70,730,370" title="Subsystem: Receive order and dispatch tasks">
+
+				<AREA SHAPE="RECT" COORDS="600,160,710,210" title="UseCase: Automatically assign task to drivers">
+
+				<AREA SHAPE="RECT" COORDS="450,210,560,260" title="UseCase: accept/reject tasks">
+
+				<AREA SHAPE="RECT" COORDS="600,280,710,330" title="UseCase: Assign task for driver">
+
+				<AREA SHAPE="RECT" COORDS="270,110,380,160" title="UseCase: Request order">
+			</MAP>
+			<center>
+				<p class="title" style="font-size:16px; margin:0px">
+					<a href="ReceiveOrderAndDispatchTasks_134218588.html" title="Click here to see full diagram" target="Body">Receive order and dispatch tasks</a>
+				</p>
+			</center>
+			<IMG SRC="134218588.jpeg" USEMAP="#ReceiveOrderAndDispatchTasks" title="Receive order and dispatch tasks Diagram" border="noborder" target="Body">
+		</DIV>
+	</body>
+</html>
+<script type="text/javascript">
+    top.window.document.title = document.title;
+</script>

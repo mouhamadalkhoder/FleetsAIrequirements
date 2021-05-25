@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title> System use case - Tue May 25 11:16:38 2021
+  </title>
+	<script>
+		function open_window(url){
+			remote=window.open(url,"remotewin", "WIDTH=400 , HEIGHT = 400 , scrollbars='auto', resizable=1");
+			remote.focus();
+		}
+		
+		function open_Search_window(url){
+			remote=window.open(url,"remotewin", "WIDTH=450 , HEIGHT = 400 , scrollbars=0, resizable=0");
+			remote.focus();
+		}
+		
+		function Related_Objectives(a,b){
+			var x = document.getElementById(a);
+			x.src = b;
+		}
+		
+		function restoreCols(){
+			parent.document.getElementById("main").cols="200,*";
+			parent.document.getElementById("maintree").rows="20,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/DiagramsTree.html"
+		}
+		 
+		function changeCols(){
+			parent.document.getElementById("main").cols="25,*";
+			parent.document.getElementById("maintree").rows="0,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/CollapsedTree.html";
+		}
+	</script>
+	<link rel="stylesheet" href="../../Styles/Styles.css" type="text/css">
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+</head>
+	<DIV ALIGN="left">
+		<body>
+			<MAP NAME="SystemUseCase">
+
+				<AREA SHAPE="RECT" COORDS="120,340,180,430" title="Actor: shop owner">
+
+				<AREA SHAPE="RECT" COORDS="490,420,650,470" title="UseCase: Deliver the order">
+
+				<AREA SHAPE="RECT" COORDS="490,360,650,410" title="UseCase: Pick up order">
+
+				<AREA SHAPE="RECT" COORDS="480,270,640,330" title="UseCase: process order and dispatch tasks">
+				<AREA SHAPE="RECT" COORDS="480,330,495,345" HREF="../DiagramsFiles/ReceiveOrderAndDispatchTasks_134218588Page.html" title="UseCase Drilldown Models" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="470,70,630,110" title="UseCase: Set up system">
+				<AREA SHAPE="RECT" COORDS="470,110,485,125" HREF="../DiagramsFiles/SetUpSystem_134218568Page.html" title="UseCase Drilldown Models" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="390,160,500,210" title="UseCase: Go Online/offline">
+
+				<AREA SHAPE="RECT" COORDS="500,540,650,590" title="UseCase: Complete delivery">
+
+				<AREA SHAPE="RECT" COORDS="490,480,650,530" title="UseCase: View reports and analytics">
+
+				<AREA SHAPE="RECT" COORDS="470,200,630,250" title="UseCase: Track trips status">
+
+				<AREA SHAPE="RECT" COORDS="920,350,980,440" title="Actor: System">
+
+				<AREA SHAPE="RECT" COORDS="690,580,750,610" title="UseCase: UNNAMED">
+
+				<AREA SHAPE="RECT" COORDS="510,140,670,190" title="UseCase: Track drivers location and status">
+
+				<AREA SHAPE="RECT" COORDS="300,590,420,640" title="UseCase: Track order">
+
+				<AREA SHAPE="RECT" COORDS="130,570,190,660" title="Actor: End-customer">
+
+				<AREA SHAPE="RECT" COORDS="120,160,180,250" title="Actor: Driver">
+
+				<AREA SHAPE="RECT" COORDS="920,160,980,250" title="Actor: Fleet Manager">
+
+				<AREA SHAPE="RECT" COORDS="250,20,850,670" title="Subsystem: Delivery system">
+			</MAP>
+			<center>
+				<p class="title" style="font-size:16px; margin:0px">
+					<a href="SystemUseCase_134218513.html" title="Click here to see full diagram" target="Body">System use case</a>
+				</p>
+			</center>
+			<IMG SRC="134218513.jpeg" USEMAP="#SystemUseCase" title="System use case Diagram" border="noborder" target="Body">
+		</DIV>
+	</body>
+</html>
+<script type="text/javascript">
+    top.window.document.title = document.title;
+</script>

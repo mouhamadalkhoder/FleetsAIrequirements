@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title> Get ready for operation - Tue May 25 11:16:38 2021
+  </title>
+	<script>
+		function open_window(url){
+			remote=window.open(url,"remotewin", "WIDTH=400 , HEIGHT = 400 , scrollbars='auto', resizable=1");
+			remote.focus();
+		}
+		
+		function open_Search_window(url){
+			remote=window.open(url,"remotewin", "WIDTH=450 , HEIGHT = 400 , scrollbars=0, resizable=0");
+			remote.focus();
+		}
+		
+		function Related_Objectives(a,b){
+			var x = document.getElementById(a);
+			x.src = b;
+		}
+		
+		function restoreCols(){
+			parent.document.getElementById("main").cols="200,*";
+			parent.document.getElementById("maintree").rows="20,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/DiagramsTree.html"
+		}
+		 
+		function changeCols(){
+			parent.document.getElementById("main").cols="25,*";
+			parent.document.getElementById("maintree").rows="0,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/CollapsedTree.html";
+		}
+	</script>
+	<link rel="stylesheet" href="../../Styles/Styles.css" type="text/css">
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+</head>
+	<DIV ALIGN="left">
+		<body>
+			<MAP NAME="GetReadyForOperation">
+
+				<AREA SHAPE="RECT" COORDS="400,960,440,1000" HREF="../EndEvent_134218508.html" title="EndEvent: UNNAMED" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="195,570,307,592" title="GatewayConditionalFlow: Driver decides to go offline">
+
+				<AREA SHAPE="RECT" COORDS="790,900,930,940" HREF="../SendTask_134218499.html" title="SendTask: Sets driver status as offline" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="820,850,860,890" HREF="../MessageIntermediateCatchEvent_134218498.html" title="MessageIntermediateCatchEvent: Receives request to go offline" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="820,590,860,630" title="EventBased: UNNAMED">
+
+				<AREA SHAPE="RECT" COORDS="350,850,480,880" HREF="../SendTask_134218494.html" title="SendTask: Send Offline signal" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="140,640,280,670" HREF="../Task_134218492.html" title="Task: Driver goes offline" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="680,800,720,840" HREF="../EndEventTerminateEvent_134218489.html" title="EndEventTerminateEvent: UNNAMED" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="650,750,790,780" HREF="../Task_134218487.html" title="Task: Set driver offline" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="680,690,720,730" HREF="../SignalIntermediateCatchEvent_134218486.html" title="SignalIntermediateCatchEvent: Driver time-out more than 5 minutes" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="430,720,460,750" HREF="../TimerBoundaryInt_134218482.html" title="TimerBoundaryInt: time-out more than 5 minutes" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="340,700,480,730" HREF="../Task_134218476.html" title="Task: Retry to connect" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="340,790,480,830" HREF="../Task_134218483.html" title="Task: Display a message to try to reconnect to internet" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="340,750,380,790" HREF="../ConditionalEventSignalIntermediateCatchEvent_134218478.html" title="ConditionalEventSignalIntermediateCatchEvent: Back on connection" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="340,650,380,690" HREF="../ConditionalEventSignalIntermediateCatchEvent_134218475.html" title="ConditionalEventSignalIntermediateCatchEvent: Connection time-out" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="350,490,490,520" HREF="../Task_134218473.html" title="Task: Provide guidance" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="500,580,540,620" title="EventBased: UNNAMED">
+
+				<AREA SHAPE="RECT" COORDS="500,530,540,570" HREF="../SignalIntermediateThrowEvent_134218470.html" title="SignalIntermediateThrowEvent: Driver ready to receive tasks" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="340,190,370,220" title="DataObject: UNNAMED">
+
+				<AREA SHAPE="RECT" COORDS="370,120,400,150" title="DataObject: UNNAMED">
+
+				<AREA SHAPE="RECT" COORDS="1000,330,1030,360" title="DataInput: set driver duty">
+				<AREA SHAPE="RECT" COORDS="1000,360,1015,375" HREF="javascript:open_window('../../HTMLFiles/134218416_Document.html')" title="DataInput Documents" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="150,490,280,520" HREF="../Task_134218402.html" title="Task: Respond to guidance" TARGET="Body">
+				<AREA SHAPE="RECT" COORDS="150,520,165,535" HREF="javascript:open_window('../../HTMLFiles/134218402_Document.html')" title="Task Documents" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="410,400,550,430" HREF="../ReceiveTask_134218401.html" title="ReceiveTask: Receive system message" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="830,470,870,510" title="ExclusiveGateway: Duty matches the driver information?">
+
+				<AREA SHAPE="RECT" COORDS="460,440,500,480" title="ExclusiveGateway: UNNAMED">
+
+				<AREA SHAPE="RECT" COORDS="670,470,810,510" HREF="../SendTask_134218395.html" title="SendTask: Provide guidance" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="770,420,910,450" HREF="../Task_134218394.html" title="Task: Check rquest against set drivers duty" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="500,790,540,830" HREF="../EndEvent_134218390.html" title="EndEvent:   " TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="820,950,860,990" HREF="../EndEvent_134218388.html" title="EndEvent: UNNAMED" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="1000,420,1040,970" title="Participant: Driver Manager: change driver status">
+
+				<AREA SHAPE="RECT" COORDS="760,530,900,570" HREF="../SendTask_134218385.html" title="SendTask: Sets driver status as online" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="820,80,860,120" HREF="../StartTopLevel_134218382.html" title="StartTopLevel: UNNAMED" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="410,360,550,390" HREF="../SendTask_134218375.html" title="SendTask: Request to go onine" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="410,290,550,320" HREF="../Task_134218374.html" title="Task: Center map" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="460,230,500,270" title="ExclusiveGateway: internet and GPS okay">
+
+				<AREA SHAPE="RECT" COORDS="140,200,280,240" HREF="../Task_134218367.html" title="Task: Fix internet and/or GPS connection" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="140,330,280,360" HREF="../Task_134218361.html" title="Task: Go online" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="770,370,910,410" HREF="../ReceiveTask_134218359.html" title="ReceiveTask: Retrieve driver's request to go online" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="410,170,550,210" HREF="../Task_134218356.html" title="Task: Check internet and GPS connection" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="140,140,280,170" HREF="../Task_134218353.html" title="Task: oppens app" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="190,80,230,120" HREF="../StartTopLevel_134218352.html" title="StartTopLevel: UNNAMED" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="320,50,610,1020" HREF="../Lane_134218379.html" title="Lane: app checks internet and GPS" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="80,50,320,1020" HREF="../Lane_134218378.html" title="Lane: Driver going online" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="640,50,970,1020" HREF="../Lane_134218381.html" title="Lane: System receiving driver readiness" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="80,20,610,50" title="Participant: Get ready to receive tasks">
+
+				<AREA SHAPE="RECT" COORDS="640,20,970,50" title="Participant: System getting driver online">
+			</MAP>
+			<center>
+				<p class="title" style="font-size:16px; margin:0px">
+					<a href="GetReadyForOperation_134218366.html" title="Click here to see full diagram" target="Body">Get ready for operation</a>
+				</p>
+			</center>
+			<IMG SRC="134218366.jpeg" USEMAP="#GetReadyForOperation" title="Get ready for operation Diagram" border="noborder" target="Body">
+		</DIV>
+	</body>
+</html>
+<script type="text/javascript">
+    top.window.document.title = document.title;
+</script>

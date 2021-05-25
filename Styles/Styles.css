@@ -1,0 +1,120 @@
+.header-left {
+	background-image:url(../Images/Banner/LeftHeader.jpg);
+	height:66px;
+	width:278px;
+	background-position:left;
+	background-repeat:no-repeat;
+	}
+	
+.header-middle{
+	background-image:url(../Images/Banner/MiddleHeader.jpg);
+	height:66px;
+	background-repeat:repeat-x;
+	}
+
+.header-right{
+	background-image:url(../Images/Banner/RightHeader.jpg);
+	height:66px;
+	width:239px;
+	background-position:right;
+	background-repeat:no-repeat;
+	}	
+
+.thumbnail-link{
+	border:3px;
+	border-color: #39889E;
+	}
+
+a:visited{
+	color:#5A9A27;
+	border-color:#FF6600;
+	}
+	
+a:hover{
+	text-decoration:underline;
+	}
+
+a{
+	color:#00A0AF; /*007C85*/
+	text-decoration:none;
+	}
+
+TD {
+	PADDING: .4em .4em .4em .4em;
+	VERTICAL-ALIGN: top
+	}
+	
+.firstbox{
+	width:95%;
+	border:1px;
+	border-style:solid;
+	border-color:#39889E;
+	background-color:#ffffff;
+	}
+	
+.secondbox{
+	height:88px;
+	width:95%;
+	border:1px;
+	border-style:solid;
+	border-color:#39889E;
+	margin-top:5px;
+	background-color:#FFFFFF;
+	background-image:url(../Images/TopGradient2.png);
+	background-repeat:repeat-x;
+	}
+	
+.thirdbox{
+	background-image:url(../Images/Centerbottombar.png);
+	background-repeat:repeat-x;
+	border-collapse:collapse;
+	vertical-align:middle;
+	}
+
+.title{
+	font-size:13px;
+	font-weight:bold;
+	color:#005CAB;
+	}
+	
+.list{
+	color:#000000;
+	font-weight:normal;
+	margin-left:11px;
+	margin-right:11px;
+	margin-top:11px;
+	margin-bottom:-6px;
+	padding-left:0px;
+	padding-right:0px;
+	}	
+
+.bottom-bar{
+	font-size:11px;
+	color:#39889E;
+	width:95%;
+	}
+
+	/* Put this inside a @media qualifier so Netscape 4 ignores it */
+@media screen, print { 
+
+	ul.mktree { padding-left:0px; margin-top:2px}
+	/* Turn off list bullets */
+	ul.mktree  li { list-style: none; } 
+	/* Control how "spaced out" the tree is */
+	ul.mktree{ margin-left:-2px;}
+	ul.mktree li {margin-left:0px}
+	/* Provide space for our own "bullet" inside the LI */
+	ul.mktree  li           .bullet { padding-left: 15px; }
+	/* Show "bullets" in the links, depending on the class of the LI that the link's in */
+	ul.mktree  li.liOpen    .bullet { cursor: pointer; background: url(../Images/Tree/OpenedFolder2.png)  center left no-repeat;}
+	ul.mktree  li.liClosed  .bullet { cursor: pointer; background: url(../Images/Tree/ClosedFolder2.png)   center left no-repeat; }
+	ul.mktree  li.liBullet  .bullet { cursor: default; background: url(../Images/Tree/Bullet.png) center left no-repeat; padding-right:15px; margin-left:-15px }
+	/* Sublists are visible or not based on class of parent LI */
+	ul.mktree  li.liOpen    ul { display: block; padding-left:0px; margin-left:-15px}
+	ul.mktree  li.liClosed  ul { display: none; }
+	/* Format menu items differently depending on what level of the tree they are in */
+	ul.mktree  li { font-size: 10pt; font-weight:bold; padding-left:-15}
+	ul.mktree  li ul li { font-size: 10pt; padding-left:25px; font-weight:normal; }
+	<!--ul.mktree  li ul li ul li { font-size: 8pt; }-->
+	<!--ul.mktree  li ul li ul li ul li { font-size: 6pt; }-->
+}

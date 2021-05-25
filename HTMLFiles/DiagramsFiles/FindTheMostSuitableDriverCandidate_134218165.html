@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title> Find the most suitable driver candidate - Tue May 25 11:16:38 2021
+  </title>
+	<script>
+		function open_window(url){
+			remote=window.open(url,"remotewin", "WIDTH=400 , HEIGHT = 400 , scrollbars='auto', resizable=1");
+			remote.focus();
+		}
+		
+		function open_Search_window(url){
+			remote=window.open(url,"remotewin", "WIDTH=450 , HEIGHT = 400 , scrollbars=0, resizable=0");
+			remote.focus();
+		}
+		
+		function Related_Objectives(a,b){
+			var x = document.getElementById(a);
+			x.src = b;
+		}
+		
+		function restoreCols(){
+			parent.document.getElementById("main").cols="200,*";
+			parent.document.getElementById("maintree").rows="20,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/DiagramsTree.html"
+		}
+		 
+		function changeCols(){
+			parent.document.getElementById("main").cols="25,*";
+			parent.document.getElementById("maintree").rows="0,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/CollapsedTree.html";
+		}
+	</script>
+	<link rel="stylesheet" href="../../Styles/Styles.css" type="text/css">
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+</head>
+	<DIV ALIGN="left">
+		<body>
+			<MAP NAME="FindTheMostSuitableDriverCandidate">
+
+				<AREA SHAPE="RECT" COORDS="490,230,520,260" title="DataObject: Available drivers">
+
+				<AREA SHAPE="RECT" COORDS="490,190,520,220" title="DataObject: request for available drivers">
+				<AREA SHAPE="RECT" COORDS="490,220,505,235" HREF="javascript:open_window('../../HTMLFiles/134218349_Document.html')" title="DataObject Documents" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="340,480,380,520" HREF="../EndEventEscalation_134218469.html" title="EndEventEscalation: Driver not available" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="180,210,360,245" HREF="../ServiceTask_134218459.html" title="ServiceTask: Check available drivers" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="180,428,330,463" HREF="../Task_134218453.html" title="Task: propose candidate" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="250,478,290,518" HREF="../EndEvent_134218452.html" title="EndEvent: UNNAMED" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="125,328,205,358" title="GatewayConditionalFlow: no drivers in the selected area">
+
+				<AREA SHAPE="RECT" COORDS="305,328,405,358" title="GatewayConditionalFlow: area widened is more than (area*X)">
+
+				<AREA SHAPE="RECT" COORDS="180,268,360,303" HREF="../Task_134218444.html" title="Task: Decide on most suitable driver" TARGET="Body">
+				<AREA SHAPE="RECT" COORDS="180,303,195,318" HREF="javascript:open_window('../../HTMLFiles/134218444_Document.html')" title="Task Documents" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="80,268,160,303" HREF="../Task_134218443.html" title="Task: Widen pick-up area" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="250,328,290,368" title="ExclusiveGateway: UNNAMED">
+
+				<AREA SHAPE="RECT" COORDS="550,140,590,330" title="Participant: Driver Manager: retireive and present drivers staus">
+				<AREA SHAPE="RECT" COORDS="550,330,565,345" HREF="../DiagramsFiles/RetireiveAndPresentDriversStaus_134218430Page.html" title="Participant Drilldown Models" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="180,158,360,193" HREF="../Task_134218434.html" title="Task: Set filter parameters" TARGET="Body">
+				<AREA SHAPE="RECT" COORDS="180,193,195,208" HREF="javascript:open_window('../../HTMLFiles/134218434_Document.html')" title="Task Documents" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="250,88,290,128" HREF="../MessageStartTopLevel_134218431.html" title="MessageStartTopLevel: Receiving request for available drivers" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="60,50,440,540" HREF="../Lane_134218464.html" title="Lane: UNNAMED" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="60,20,440,50" title="Participant: Find the most suitable candidate">
+			</MAP>
+			<center>
+				<p class="title" style="font-size:16px; margin:0px">
+					<a href="FindTheMostSuitableDriverCandidate_134218165.html" title="Click here to see full diagram" target="Body">Find the most suitable driver candidate</a>
+				</p>
+			</center>
+			<IMG SRC="134218165.jpeg" USEMAP="#FindTheMostSuitableDriverCandidate" title="Find the most suitable driver candidate Diagram" border="noborder" target="Body">
+		</DIV>
+	</body>
+</html>
+<script type="text/javascript">
+    top.window.document.title = document.title;
+</script>

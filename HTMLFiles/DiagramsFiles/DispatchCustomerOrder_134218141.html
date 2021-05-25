@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title> Dispatch customer order - Tue May 25 11:16:38 2021
+  </title>
+	<script>
+		function open_window(url){
+			remote=window.open(url,"remotewin", "WIDTH=400 , HEIGHT = 400 , scrollbars='auto', resizable=1");
+			remote.focus();
+		}
+		
+		function open_Search_window(url){
+			remote=window.open(url,"remotewin", "WIDTH=450 , HEIGHT = 400 , scrollbars=0, resizable=0");
+			remote.focus();
+		}
+		
+		function Related_Objectives(a,b){
+			var x = document.getElementById(a);
+			x.src = b;
+		}
+		
+		function restoreCols(){
+			parent.document.getElementById("main").cols="200,*";
+			parent.document.getElementById("maintree").rows="20,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/DiagramsTree.html"
+		}
+		 
+		function changeCols(){
+			parent.document.getElementById("main").cols="25,*";
+			parent.document.getElementById("maintree").rows="0,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/CollapsedTree.html";
+		}
+	</script>
+	<link rel="stylesheet" href="../../Styles/Styles.css" type="text/css">
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+</head>
+	<DIV ALIGN="left">
+		<body>
+			<MAP NAME="DispatchCustomerOrder">
+
+				<AREA SHAPE="RECT" COORDS="820,470,880,492" title="GatewayConditionalFlow: Rejected response">
+
+				<AREA SHAPE="RECT" COORDS="592,540,622,570" title="DataObject: Assigned order">
+				<AREA SHAPE="RECT" COORDS="592,570,607,585" HREF="javascript:open_window('../../HTMLFiles/134218424_Document.html')" title="DataObject Documents" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="590,240,620,270" title="DataObject: Most suitable Drivers">
+
+				<AREA SHAPE="RECT" COORDS="470,270,500,300" title="DataObject: Request information">
+
+				<AREA SHAPE="RECT" COORDS="530,130,560,160" title="DataObject: Order information">
+				<AREA SHAPE="RECT" COORDS="530,160,545,175" HREF="javascript:open_window('../../HTMLFiles/134218302_Document.html')" title="DataObject Documents" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="648,520,710,551" title="GatewayConditionalFlow: Accepted Request">
+
+				<AREA SHAPE="RECT" COORDS="810,650,850,690" HREF="../EndEventTerminate_134218207.html" title="EndEventTerminate: Manual dispatching triggered" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="750,510,780,540" HREF="../TimerIntermediateCatchEvent_134218204.html" title="TimerIntermediateCatchEvent: 3 rejected responses" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="770,560,920,590" HREF="../SendTask_134218199.html" title="SendTask: Trigger manual dispatching" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="770,390,800,420" HREF="../TimerBoundaryInt_134218196.html" title="TimerBoundaryInt: Response time out" TARGET="Body">
+				<AREA SHAPE="RECT" COORDS="770,420,785,435" HREF="javascript:open_window('../../HTMLFiles/134218196_Document.html')" title="TimerBoundaryInt Documents" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="400,530,430,560" title="DataObject: driver rejection reasons">
+
+				<AREA SHAPE="RECT" COORDS="190,580,230,620" HREF="../EndEventTerminate_134218191.html" title="EndEventTerminate: Rejected request" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="180,510,330,540" HREF="../ServiceTask_134218184.html" title="ServiceTask: provide reason for rejetion" TARGET="Body">
+				<AREA SHAPE="RECT" COORDS="180,540,195,555" HREF="javascript:open_window('../../HTMLFiles/134218184_Document.html')" title="ServiceTask Documents" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="100,495,160,525" title="GatewayConditionalFlow: accepted request">
+
+				<AREA SHAPE="RECT" COORDS="140,580,180,620" HREF="../EndEventTerminateEvent_134218182.html" title="EndEventTerminateEvent: UNNAMED" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="140,440,180,480" title="ExclusiveGateway: accept or reject?">
+
+				<AREA SHAPE="RECT" COORDS="640,600,790,630" HREF="../SendTask_134218175.html" title="SendTask: Send customer information" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="90,380,240,410" HREF="../SendTask_134218172.html" title="SendTask: Send response" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="90,330,240,360" HREF="../Task_134218170.html" title="Task: Accept or Reject the request" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="90,270,240,310" HREF="../ReceiveTask_134218167.html" title="ReceiveTask: Receive order request" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="760,240,790,270" HREF="../ConditionalEventEscalationBoundaryInt_134218163.html" title="ConditionalEventEscalationBoundaryInt: drivers not available" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="140,120,180,160" HREF="../StartTopLevel_134218161.html" title="StartTopLevel: Driver ready to receive orders" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="690,480,730,520" title="ComplexGateway: UNNAMED">
+
+				<AREA SHAPE="RECT" COORDS="630,430,780,460" HREF="../Task_134218152.html" title="Task: Check response" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="630,380,780,410" HREF="../ReceiveTask_134218151.html" title="ReceiveTask: Receive response" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="630,280,780,310" HREF="../SendTask_134218149.html" title="SendTask: Send Request" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="630,210,780,260" HREF="../ServiceTask_134218136.html" title="ServiceTask: Find the most suitable driver candidate" TARGET="Body">
+				<AREA SHAPE="RECT" COORDS="630,260,645,275" HREF="../DiagramsFiles/FindTheMostSuitableDriverCandidate_134218165Page.html" title="ServiceTask Drilldown Models" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="690,650,730,690" HREF="../EndEventTerminateEvent_134218134.html" title="EndEventTerminateEvent: Order Assigned" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="690,110,730,150" HREF="../MessageStartTopLevel_134218133.html" title="MessageStartTopLevel: Receive customer order" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="590,30,940,70" title="Participant: Dispatch customer order">
+
+				<AREA SHAPE="RECT" COORDS="460,40,500,230" title="Participant: Take the customer order; sends customer information">
+
+				<AREA SHAPE="RECT" COORDS="50,30,370,70" title="Participant: receive and approve order request">
+
+				<AREA SHAPE="RECT" COORDS="460,370,500,600" title="Participant: Driver Manager: change driver status">
+
+				<AREA SHAPE="RECT" COORDS="50,70,370,630" HREF="../Lane_134218195.html" title="Lane: Driver respond to order request" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="590,70,940,710" HREF="../Lane_134218209.html" title="Lane: Customer order dispatcher" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="970,510,1010,700" title="Participant: Manually assign order to driver">
+			</MAP>
+			<center>
+				<p class="title" style="font-size:16px; margin:0px">
+					<a href="DispatchCustomerOrder_134218141.html" title="Click here to see full diagram" target="Body">Dispatch customer order</a>
+				</p>
+			</center>
+			<IMG SRC="134218141.jpeg" USEMAP="#DispatchCustomerOrder" title="Dispatch customer order Diagram" border="noborder" target="Body">
+		</DIV>
+	</body>
+</html>
+<script type="text/javascript">
+    top.window.document.title = document.title;
+</script>

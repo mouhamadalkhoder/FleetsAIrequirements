@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title> Continuously check driver connection - Tue May 25 11:16:38 2021
+  </title>
+	<script>
+		function open_window(url){
+			remote=window.open(url,"remotewin", "WIDTH=400 , HEIGHT = 400 , scrollbars='auto', resizable=1");
+			remote.focus();
+		}
+		
+		function open_Search_window(url){
+			remote=window.open(url,"remotewin", "WIDTH=450 , HEIGHT = 400 , scrollbars=0, resizable=0");
+			remote.focus();
+		}
+		
+		function Related_Objectives(a,b){
+			var x = document.getElementById(a);
+			x.src = b;
+		}
+		
+		function restoreCols(){
+			parent.document.getElementById("main").cols="200,*";
+			parent.document.getElementById("maintree").rows="20,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/DiagramsTree.html"
+		}
+		 
+		function changeCols(){
+			parent.document.getElementById("main").cols="25,*";
+			parent.document.getElementById("maintree").rows="0,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/CollapsedTree.html";
+		}
+	</script>
+	<link rel="stylesheet" href="../../Styles/Styles.css" type="text/css">
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+</head>
+	<DIV ALIGN="left">
+		<body>
+			<MAP NAME="ContinuouslyCheckDriverConnection">
+
+				<AREA SHAPE="RECT" COORDS="210,310,360,340" HREF="../SendTask_134218263.html" title="SendTask: Send notification to fleet manager" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="260,260,300,300" HREF="../TimerIntermediateCatchEvent_134218261.html" title="TimerIntermediateCatchEvent: X minutes passed" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="210,210,360,250" HREF="../ServiceTask_134218259.html" title="ServiceTask: Check connection" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="260,150,300,190" HREF="../ConditionalIntermediateCatchEvent_134218258.html" title="ConditionalIntermediateCatchEvent: Loss of connection" TARGET="Body">
+			</MAP>
+			<center>
+				<p class="title" style="font-size:16px; margin:0px">
+					<a href="ContinuouslyCheckDriverConnection_134218266.html" title="Click here to see full diagram" target="Body">Continuously check driver connection</a>
+				</p>
+			</center>
+			<IMG SRC="134218266.jpeg" USEMAP="#ContinuouslyCheckDriverConnection" title="Continuously check driver connection Diagram" border="noborder" target="Body">
+		</DIV>
+	</body>
+</html>
+<script type="text/javascript">
+    top.window.document.title = document.title;
+</script>

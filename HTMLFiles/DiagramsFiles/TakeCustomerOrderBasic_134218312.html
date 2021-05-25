@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title> Take customer order- basic - Tue May 25 11:16:38 2021
+  </title>
+	<script>
+		function open_window(url){
+			remote=window.open(url,"remotewin", "WIDTH=400 , HEIGHT = 400 , scrollbars='auto', resizable=1");
+			remote.focus();
+		}
+		
+		function open_Search_window(url){
+			remote=window.open(url,"remotewin", "WIDTH=450 , HEIGHT = 400 , scrollbars=0, resizable=0");
+			remote.focus();
+		}
+		
+		function Related_Objectives(a,b){
+			var x = document.getElementById(a);
+			x.src = b;
+		}
+		
+		function restoreCols(){
+			parent.document.getElementById("main").cols="200,*";
+			parent.document.getElementById("maintree").rows="20,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/DiagramsTree.html"
+		}
+		 
+		function changeCols(){
+			parent.document.getElementById("main").cols="25,*";
+			parent.document.getElementById("maintree").rows="0,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/CollapsedTree.html";
+		}
+	</script>
+	<link rel="stylesheet" href="../../Styles/Styles.css" type="text/css">
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+</head>
+	<DIV ALIGN="left">
+		<body>
+			<MAP NAME="TakeCustomerOrderBasic">
+
+				<AREA SHAPE="RECT" COORDS="760,300,790,330" title="DataObject: basic order information">
+				<AREA SHAPE="RECT" COORDS="760,330,775,345" HREF="javascript:open_window('../../HTMLFiles/134218427_Document.html')" title="DataObject Documents" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="600,310,750,340" HREF="../Task_134218344.html" title="Task: Create order" TARGET="Body">
+				<AREA SHAPE="RECT" COORDS="600,340,615,355" HREF="javascript:open_window('../../HTMLFiles/134218344_Document.html')" title="Task Documents" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="850,360,880,390" title="DataObject: Order Information; Basic ordering">
+				<AREA SHAPE="RECT" COORDS="850,390,865,405" HREF="javascript:open_window('../../HTMLFiles/134218343_Document.html')" title="DataObject Documents" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="600,250,750,300" HREF="../Task_134218337.html" title="Task: Check button ID and select corresponding vehicle type" TARGET="Body">
+				<AREA SHAPE="RECT" COORDS="600,300,615,315" HREF="javascript:open_window('../../HTMLFiles/134218337_Document.html')" title="Task Documents" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="850,220,870,240" title="DataObject: pre-set customer information">
+				<AREA SHAPE="RECT" COORDS="850,240,865,255" HREF="javascript:open_window('../../HTMLFiles/134218334_Document.html')" title="DataObject Documents" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="850,190,870,210" title="DataObject: Button ID">
+
+				<AREA SHAPE="RECT" COORDS="440,150,470,180" title="DataObject: Button ID">
+
+				<AREA SHAPE="RECT" COORDS="220,410,260,450" HREF="../EndEvent_134218327.html" title="EndEvent: UNNAMED" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="650,410,690,450" HREF="../EndEvent_134218324.html" title="EndEvent: UNNAMED" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="600,360,750,390" HREF="../SendTask_134218322.html" title="SendTask: Send information to Dispatching" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="170,150,320,190" HREF="../SendTask_134218318.html" title="SendTask: Click button-sends trigger" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="650,140,690,180" HREF="../MessageStartTopLevel_134218317.html" title="MessageStartTopLevel: Receive Restaurant request" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="600,200,750,240" HREF="../ServiceTask_134218316.html" title="ServiceTask: Fetch information from database" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="220,90,260,130" HREF="../MessageFlowTargetMessageEventStartTopLevel_134218313.html" title="MessageFlowTargetMessageEventStartTopLevel: UNNAMED" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="120,30,390,60" title="Participant: Predefined restaureant sends request">
+
+				<AREA SHAPE="RECT" COORDS="530,30,820,60" title="Participant: Take predefined restaurant order">
+
+				<AREA SHAPE="RECT" COORDS="120,60,390,460" HREF="../Lane_134218326.html" title="Lane: Restaurant requests order" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="530,60,820,460" HREF="../Lane_134218329.html" title="Lane: Take customer request" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="910,130,950,300" title="Participant: Customer database; provide customer information">
+
+				<AREA SHAPE="RECT" COORDS="910,350,950,460" title="Participant: Dispatch Customer Order">
+			</MAP>
+			<center>
+				<p class="title" style="font-size:16px; margin:0px">
+					<a href="TakeCustomerOrderBasic_134218312.html" title="Click here to see full diagram" target="Body">Take customer order- basic</a>
+				</p>
+			</center>
+			<IMG SRC="134218312.jpeg" USEMAP="#TakeCustomerOrderBasic" title="Take customer order- basic Diagram" border="noborder" target="Body">
+		</DIV>
+	</body>
+</html>
+<script type="text/javascript">
+    top.window.document.title = document.title;
+</script>

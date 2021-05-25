@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title> Take the customer order - Tue May 25 11:16:38 2021
+  </title>
+	<script>
+		function open_window(url){
+			remote=window.open(url,"remotewin", "WIDTH=400 , HEIGHT = 400 , scrollbars='auto', resizable=1");
+			remote.focus();
+		}
+		
+		function open_Search_window(url){
+			remote=window.open(url,"remotewin", "WIDTH=450 , HEIGHT = 400 , scrollbars=0, resizable=0");
+			remote.focus();
+		}
+		
+		function Related_Objectives(a,b){
+			var x = document.getElementById(a);
+			x.src = b;
+		}
+		
+		function restoreCols(){
+			parent.document.getElementById("main").cols="200,*";
+			parent.document.getElementById("maintree").rows="20,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/DiagramsTree.html"
+		}
+		 
+		function changeCols(){
+			parent.document.getElementById("main").cols="25,*";
+			parent.document.getElementById("maintree").rows="0,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/CollapsedTree.html";
+		}
+	</script>
+	<link rel="stylesheet" href="../../Styles/Styles.css" type="text/css">
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+</head>
+	<DIV ALIGN="left">
+		<body>
+			<MAP NAME="TakeTheCustomerOrder">
+
+				<AREA SHAPE="RECT" COORDS="130,100,310,140" HREF="../BusinessActivity_134218311.html" title="BusinessActivity: Take customer order- basic" TARGET="Body">
+				<AREA SHAPE="RECT" COORDS="130,140,145,155" HREF="../DiagramsFiles/TakeCustomerOrderBasic_134218312Page.html" title="BusinessActivity Drilldown Models" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="130,200,310,240" HREF="../BusinessActivity_134218308.html" title="BusinessActivity: Take customer order - delivery" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="130,150,310,190" HREF="../BusinessActivity_134218307.html" title="BusinessActivity: Take customer order - taxi" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="810,140,840,170" title="DataObject: Customer Information">
+				<AREA SHAPE="RECT" COORDS="810,170,825,185" HREF="javascript:open_window('../../HTMLFiles/134218176_Document.html')" title="DataObject Documents" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="810,50,840,80" title="DataObject: Customer Information">
+				<AREA SHAPE="RECT" COORDS="810,80,825,95" HREF="javascript:open_window('../../HTMLFiles/134218176_Document.html')" title="DataObject Documents" TARGET="Body">
+			</MAP>
+			<center>
+				<p class="title" style="font-size:16px; margin:0px">
+					<a href="TakeTheCustomerOrder_134218304.html" title="Click here to see full diagram" target="Body">Take the customer order</a>
+				</p>
+			</center>
+			<IMG SRC="134218304.jpeg" USEMAP="#TakeTheCustomerOrder" title="Take the customer order Diagram" border="noborder" target="Body">
+		</DIV>
+	</body>
+</html>
+<script type="text/javascript">
+    top.window.document.title = document.title;
+</script>

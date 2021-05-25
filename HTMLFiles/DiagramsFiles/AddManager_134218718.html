@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title> Add manager - Tue May 25 11:16:38 2021
+  </title>
+	<script>
+		function open_window(url){
+			remote=window.open(url,"remotewin", "WIDTH=400 , HEIGHT = 400 , scrollbars='auto', resizable=1");
+			remote.focus();
+		}
+		
+		function open_Search_window(url){
+			remote=window.open(url,"remotewin", "WIDTH=450 , HEIGHT = 400 , scrollbars=0, resizable=0");
+			remote.focus();
+		}
+		
+		function Related_Objectives(a,b){
+			var x = document.getElementById(a);
+			x.src = b;
+		}
+		
+		function restoreCols(){
+			parent.document.getElementById("main").cols="200,*";
+			parent.document.getElementById("maintree").rows="20,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/DiagramsTree.html"
+		}
+		 
+		function changeCols(){
+			parent.document.getElementById("main").cols="25,*";
+			parent.document.getElementById("maintree").rows="0,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/CollapsedTree.html";
+		}
+	</script>
+	<link rel="stylesheet" href="../../Styles/Styles.css" type="text/css">
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+</head>
+	<DIV ALIGN="left">
+		<body>
+			<MAP NAME="AddManager">
+
+				<AREA SHAPE="RECT" COORDS="260,200,390,240" HREF="../Task_134218778.html" title="Task: Send credentials to the manager" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="720,250,760,290" HREF="../EndEvent_134218774.html" title="EndEvent: UNNAMED" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="720,200,760,240" HREF="../EndEvent_134218773.html" title="EndEvent: UNNAMED" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="720,150,760,190" HREF="../EndEvent_134218772.html" title="EndEvent: UNNAMED" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="540,250,680,290" HREF="../Task_134218733.html" title="Task: reset password" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="540,200,680,240" HREF="../Task_134218731.html" title="Task: assign to team" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="540,150,680,190" HREF="../Task_134218729.html" title="Task: edit manager details" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="410,200,450,240" HREF="../IntermediateThrowEvent_134218726.html" title="IntermediateThrowEvent: Manager Added" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="110,50,280,124" title="Document: Name, family, phone number, email, password, assigned team (optional),  view only(option)">
+
+				<AREA SHAPE="RECT" COORDS="110,130,140,160" title="DataObject: Manager info">
+				<AREA SHAPE="RECT" COORDS="110,160,125,175" HREF="javascript:open_window('../../HTMLFiles/134218721_Document.html')" title="DataObject Documents" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="110,200,240,240" HREF="../Task_134218720.html" title="Task: Add manager" TARGET="Body">
+
+				<AREA SHAPE="RECT" COORDS="50,200,90,240" HREF="../StartTopLevel_134218719.html" title="StartTopLevel: UNNAMED" TARGET="Body">
+			</MAP>
+			<center>
+				<p class="title" style="font-size:16px; margin:0px">
+					<a href="AddManager_134218718.html" title="Click here to see full diagram" target="Body">Add manager</a>
+				</p>
+			</center>
+			<IMG SRC="134218718.jpeg" USEMAP="#AddManager" title="Add manager Diagram" border="noborder" target="Body">
+		</DIV>
+	</body>
+</html>
+<script type="text/javascript">
+    top.window.document.title = document.title;
+</script>

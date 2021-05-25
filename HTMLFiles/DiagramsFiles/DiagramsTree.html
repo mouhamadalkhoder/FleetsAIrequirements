@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<title>Diagram Tree</title>
+	<script type="text/javascript">
+		function changeCols()
+		  {
+			parent.document.getElementById("main").cols="25,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/CollapsedTree.html";
+		  }
+	</script>
+	<SCRIPT SRC="../../Scripts/tree.js" LANGUAGE="JavaScript"></SCRIPT>
+	<LINK REL="stylesheet" HREF="../../Styles/Styles.css">
+	</head>
+
+	<body onload="collapseTree('mytreeL1')" STYLE="margin:0px;font-family:Arial, Helvetica, sans-serif;background-color:#CCEBED;">
+		<table style="font-size:12px" cellpadding="0" cellspacing="0">
+			<tr>
+				<td NOWRAP>
+					<A onClick="expandTree('mytreeL0'); return false;" style="cursor: pointer; margin:3 0 0 3">
+					<img src="../../Images/Tree/arrowdown.png" title="Expand All" width="24" height="10" style="border:0"/></A>
+					<A onClick="collapseTree('mytreeL0'); return false;" style="cursor: pointer; margin:3 0 0 0" >
+					<img src="../../Images/Tree/arrowup.png" title="Collapse All" width="24" height="10" style="border:0"/></A><br/>
+					<ul id="mytreeL0" class="mktree" style="margin-top:4px">
+						<li class="liClosed" id="node3" name="Enterprise">Enterprise 
+							<ul id="mktreeL2">
+								<li id="node1"> <a href="../DiagramsFiles/DeliveryOperations_134218068Page.html" target="Body" title="Business Architecture: Delivery Operations"> Delivery Operations </a> </li>
+							</ul>
+						</li>
+						<li class="liClosed" id="node3" name="UML 2.1 Context">UML 2.1 Context 
+							<ul id="mktreeL2">
+								<li id="node1"> <a href="../DiagramsFiles/TeamManagerDriversClassDiagram_134218279Page.html" target="Body" title="UML 2.1 Classes Diagram: Team manager drivers class diagram"> Team manager drivers class diagram </a> </li>
+								<li id="node1"> <a href="../DiagramsFiles/SystemUseCase_134218513Page.html" target="Body" title="UML 2.1 UseCase Diagram: System use case"> System use case </a> </li>
+								<li id="node1"> <a href="../DiagramsFiles/DeliverOrdersUseCase_134218532Page.html" target="Body" title="UML 2.1 UseCase Diagram: Deliver orders use case"> Deliver orders use case </a> </li>
+								<li id="node1"> <a href="../DiagramsFiles/SetUpSystem_134218568Page.html" target="Body" title="UML 2.1 UseCase Diagram: Set up system"> Set up system </a> </li>
+								<li id="node1"> <a href="../DiagramsFiles/ReceiveOrderAndDispatchTasks_134218588Page.html" target="Body" title="UML 2.1 UseCase Diagram: Receive order and dispatch tasks"> Receive order and dispatch tasks </a> </li>
+								<li id="node1"> <a href="../DiagramsFiles/DeliverOrders_134218528Page.html" target="Body" title="UML 2.1 Interactions Diagram: Deliver orders"> Deliver orders </a> </li>
+							</ul>
+						</li>
+						<li class="liClosed" id="node3" name="BPM Accelerator">BPM Accelerator 
+							<ul id="mktreeL2">
+								<li id="node1"> <a href="../DiagramsFiles/PickUpOrder_134218131Page.html" target="Body" title="BPM Business Process: Pick-up order"> Pick-up order </a> </li>
+								<li id="node1"> <a href="../DiagramsFiles/DispatchCustomerOrder_134218141Page.html" target="Body" title="BPM Business Process: Dispatch customer order"> Dispatch customer order </a> </li>
+								<li id="node1"> <a href="../DiagramsFiles/FindTheMostSuitableDriverCandidate_134218165Page.html" target="Body" title="BPM Business Process: Find the most suitable driver candidate"> Find the most suitable driver candidate </a> </li>
+								<li id="node1"> <a href="../DiagramsFiles/ContinuouslyCheckDriverConnection_134218266Page.html" target="Body" title="BPM Business Process: Continuously check driver connection"> Continuously check driver connection </a> </li>
+								<li id="node1"> <a href="../DiagramsFiles/TakeTheCustomerOrder_134218304Page.html" target="Body" title="BPM Business Process: Take the customer order"> Take the customer order </a> </li>
+								<li id="node1"> <a href="../DiagramsFiles/TakeCustomerOrderBasic_134218312Page.html" target="Body" title="BPM Business Process: Take customer order- basic"> Take customer order- basic </a> </li>
+								<li id="node1"> <a href="../DiagramsFiles/GetReadyForOperation_134218366Page.html" target="Body" title="BPM Business Process: Get ready for operation"> Get ready for operation </a> </li>
+								<li id="node1"> <a href="../DiagramsFiles/RetireiveAndPresentDriversStaus_134218430Page.html" target="Body" title="BPM Business Process: retireive and present drivers staus"> retireive and present drivers staus </a> </li>
+								<li id="node1"> <a href="../DiagramsFiles/AdminSignUp_134218614Page.html" target="Body" title="BPM Business Process: Admin Sign up"> Admin Sign up </a> </li>
+								<li id="node1"> <a href="../DiagramsFiles/CreateTeam_134218688Page.html" target="Body" title="BPM Business Process: Create team"> Create team </a> </li>
+								<li id="node1"> <a href="../DiagramsFiles/AddManager_134218718Page.html" target="Body" title="BPM Business Process: Add manager"> Add manager </a> </li>
+							</ul>
+						</li>
+					</ul>
+				</td>
+			</tr>
+		</table>	
+	</body>
+</html>

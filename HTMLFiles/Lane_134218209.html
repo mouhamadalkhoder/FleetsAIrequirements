@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title> Lane - Tue May 25 11:16:38 2021
+  </title>
+	<script>
+		function open_window(url){
+			remote=window.open(url,"remotewin", "WIDTH=400 , HEIGHT = 400 , scrollbars='auto', resizable=1");
+			remote.focus();
+		}
+		
+		function open_Search_window(url){
+			remote=window.open(url,"remotewin", "WIDTH=450 , HEIGHT = 400 , scrollbars=0, resizable=0");
+			remote.focus();
+		}
+		
+		function Related_Objectives(a,b){
+			var x = document.getElementById(a);
+			x.src = b;
+		}
+		
+		function restoreCols(){
+			parent.document.getElementById("main").cols="200,*";
+			parent.document.getElementById("maintree").rows="20,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/DiagramsTree.html"
+		}
+		 
+		function changeCols(){
+			parent.document.getElementById("main").cols="25,*";
+			parent.document.getElementById("maintree").rows="0,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/CollapsedTree.html";
+		}
+	</script>
+	<link rel="stylesheet" href="../Styles/Styles.css" type="text/css">
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+</head>
+<body style="font-family:Arial, Helvetica, sans-serif; margin:0px; font-size:12px">
+	<script type="text/javascript" src="../Scripts/wz_tooltip.js"></script>
+	<table cellspacing="0" cellpadding="0" style="width:100%;background-image:url(../images/TopGradient.png);background-repeat:repeat-x;">
+		<tr>
+			<td>
+				<table cellspacing="0" cellpadding="0">
+					<tr>
+						<td>
+							<img src="../Images/Lane.png"/>
+						</td>
+						<td style="vertical-align:middle">
+							Customer order dispatcher
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<table class="firstbox" align="center" cellspacing="0" cellpadding="0" >
+		<tr>
+			<td width="35">
+				<img src="../Images/30px/PoolSmall.png" style="margin-left:4px"/>	
+			</td>
+			<td style="padding-left:0px">
+				<b class="title">Related Pool</b><br>
+				None 
+			</td>
+		</tr>
+		<tr>
+			<td width="35">
+				<img src="../Images/30px/Start-eventsSmall.png" style="margin-left:4px;"/>
+			</td>
+			<td width="100%" style="padding-left:0px;padding-bottom:10px">
+				<b class="title" >Events</b>
+				<img src="../images/RedUnderline.png" width="100%" height="3"/>
+				<ul class="list" style="padding-left:10px;margin-top:5px;">
+					<a href="../HTMLFiles/MessageStartTopLevel_134218133.html"><li> Receive customer order </li></a>
+					<a href="../HTMLFiles/EndEventTerminateEvent_134218134.html"><li> Order Assigned </li></a>
+					<a href="../HTMLFiles/ConditionalEventEscalationBoundaryInt_134218163.html"><li> drivers not available </li></a>
+					<a href="../HTMLFiles/TimerBoundaryInt_134218196.html"><li> Response time out </li></a>
+					<a href="../HTMLFiles/TimerIntermediateCatchEvent_134218204.html"><li> 3 rejected responses </li></a>
+					<a href="../HTMLFiles/EndEventTerminate_134218207.html"><li> Manual dispatching triggered </li></a>
+				</ul> 
+			</td>
+		</tr>
+		<tr>
+			<td width="35">
+				<img src="../Images/30px/TasksSmall.png" style="margin-left:4px"/>
+			</td>
+			<td width="100%" style="padding-left:0px"> 
+				<b class="title" >Communication Tasks</b>
+				<table cellpadding="0" cellspacing="0" width="95%">
+					<tr>
+						<td width="33%">
+							<table cellpadding="0" cellspacing="0">
+								<tr class="thirdbox">
+									<td><b class="title">Service Tasks</b></td>
+								</tr>
+								<tr>
+									<td style="padding-left:5px;padding-bottom:15px">
+										<b><a href="../HTMLFiles/ServiceTask_134218136.html">Find the most suitable driver candidate </a></b>
+										<img src="../images/RedUnderline.png" width="100%" height="3"/>
+										<ul class="list" style="padding-left:10px;margin-top:5px;">
+											<li style="margin-left:5px"><b>Sent Message: </b> None </li>
+											<li style="margin-left:5px"><b>Received Message: </b> None </li>
+											<li style="margin-left:5px"><b>Communicated with: </b> None </li>
+										</ul>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td width="33%">
+							<table cellpadding="0" cellspacing="0">
+								<tr class="thirdbox">
+									<td><b class="title">Sent Tasks</b></td>
+								</tr>
+								<tr>
+									<td style="padding-left:5px;padding-bottom:15px">
+										<b><a href="../HTMLFiles/SendTask_134218149.html"> Send Request </a></b>
+										<img src="../Images/RedUnderline.png" width="100%" height="3"/>
+										<ul class="list" style="padding-left:10px;margin-top:5px;">
+											<li style="margin-right:5px"><b>Sent Message: </b> UNNAMED </li>
+											<li style="margin-right:5px"><b>Receiver: </b> Receive order request </li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding-left:5px;padding-bottom:15px">
+										<b><a href="../HTMLFiles/SendTask_134218175.html"> Send customer information </a></b>
+										<img src="../Images/RedUnderline.png" width="100%" height="3"/>
+										<ul class="list" style="padding-left:10px;margin-top:5px;">
+											<li style="margin-right:5px"><b>Sent Message: </b> None </li>
+											<li style="margin-right:5px"><b>Receiver: </b> None </li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding-left:5px;padding-bottom:15px">
+										<b><a href="../HTMLFiles/SendTask_134218199.html"> Trigger manual dispatching </a></b>
+										<img src="../Images/RedUnderline.png" width="100%" height="3"/>
+										<ul class="list" style="padding-left:10px;margin-top:5px;">
+											<li style="margin-right:5px"><b>Sent Message: </b> UNNAMED </li>
+											<li style="margin-right:5px"><b>Receiver: </b> Manually assign order to driver </li>
+										</ul>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td width="33%">
+							<table cellpadding="0" cellspacing="0">
+								<tr class="thirdbox">
+									<td><b class="title">Received Tasks</b></td>
+								</tr>
+								<tr>
+									<td style="padding-left:5px;padding-bottom:15px">
+										<b><a href="../HTMLFiles/ReceiveTask_134218151.html"> Receive response </a></b>
+										<img src="../Images/RedUnderline.png" width="100%" height="3"/>
+										<ul class="list" style="padding-left:10px;margin-top:5px;">
+											<li style="margin-right:5px"><b>Received Message: </b> UNNAMED </li>
+											<li style="margin-right:5px"><b>Sender: </b> Send response </li>
+										</ul>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<table class="secondbox" align="center" cellspacing="0" cellpadding="0">
+		<tr valign="top">
+			<td width="50%">
+				<div style="vertical-align:top; padding:5px">
+					<b class="title">Related Diagrams</b><br>
+					None<br>
+				</div>
+			</td>
+			<td>
+				<div style="vertical-align:top; padding:5px">
+					<b class="title">Contained in the following diagrams</b>
+					<br>
+					<a href="../HTMLFiles/DiagramsFiles/DispatchCustomerOrder_134218141Page.html" onmouseover="Tip('<img src=&quot;../HTMLFiles/DiagramsFiles/134218141.jpeg&quot; width=300&quot;300&quot;>')" onmouseout="UnTip()"> Dispatch customer order </a><br>				</div>
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				<table cellspacing="0" cellpadding="0">
+					<tr align="left" >
+						<td> 
+							<b class="title">Linked Files </b><br>
+							None 
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
+<script type="text/javascript">
+	top.window.document.title = document.title;
+	changeCols();
+</script>

@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<script>
+			function PrintPage(){
+				parent['Body'].focus();
+				parent['Body'].print();
+			}
+
+			function open_window(url){
+				remote=window.open(url,"remotewin", "WIDTH=400 , HEIGHT = 400 , scrollbars='yes', resizable=1");
+				remote.focus();
+			}
+			
+			function open_Search_window(url){
+				remote=window.open(url,"remotewin", "WIDTH=345 , HEIGHT = 225 , scrollbars=0, resizable=0");
+				remote.focus();
+			}
+			
+			function open_Glossary_window(url){
+				remote=window.open(url,"remotewin", "WIDTH=600 , HEIGHT = 600 , scrollbars=1, resizable=1");
+				remote.focus();
+			}
+			
+			function restoreCols(){
+				parent.document.getElementById("main").cols="200,*";
+				parent.document.getElementById("maintree").rows="20,*";
+				parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/DiagramsTree.html"
+			}
+		</script>
+		<LINK REL="stylesheet" href="Styles/Style.css">
+		<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+		<title>Banner</title>
+	</head>
+	<body>
+		<div style=" height:66px ; width:278px ;background-image:url(./images/banner/LeftHeader.jpg); background-position:left; position:absolute; top:0px; left:0px"></div>
+		<div style="z-index:1; height:66px ; width:100%;background-image:url(./images/banner/MiddleHeader.jpg); background-position:left; position:absolute; top:0px; left:278px"></div>
+		<div style="z-index:1; height:66px ; width:239px ;background-image:url(./images/banner/RightHeader.jpg); position:absolute; right:0px; top:0px">
+			<a href="www.intelligile.com" target="_new">
+			<img src="Images/Banner/RightHeader.jpg" height="66" width="239" alt="Intelligile Website" style="outline:none; border:none"/>
+			</a>
+		</div>
+		<p style=" position:relative; z-index:2; bottom:-15px" align="center">
+			<A onclick="history.go(-1);" TARGET="Body" 
+				onmouseover="document.Up.src='./images/banner/1.png'"
+		        onmouseout ="document.Up.src='./images/banner/1Colored.png'" 
+				onClick="javascript:restoreCols()">
+				<img src="./images/banner/1Colored.png" name="Up" border="0" title="Top View"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			
+			<a HREF="HTMLFiles/DiagramsFiles/DeliveryOperations_134218068Page.html" TARGET="Body" 
+				onmouseover="document.Home.src='./images/banner/2.png'"
+		        onmouseout ="document.Home.src='./images/banner/2Colored.png'" >
+				<img src="./images/banner/2Colored.png" name="Home" border="0" title="Home Page"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			
+			<A HREF="javascript:open_Search_window('Search.html')"
+				onmouseover="document.Search.src='./images/banner/3.png'"
+		        onmouseout ="document.Search.src='./images/banner/3Colored.png'" >
+				<img src="./images/banner/3Colored.png" name="Search" border="0" title="Search"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					
+			<A HREF="javascript:open_Glossary_window('HelpFiles/Glossary.html')"
+				onmouseover="document.Glossary.src='./images/banner/5.png'"
+		        onmouseout ="document.Glossary.src='./images/banner/5Colored.png'">
+				<img src="./images/banner/5Colored.png" border="0" name="Glossary" title="Glossary"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			
+			<A HREF="javascript:PrintPage();"
+				onmouseover="document.Print.src='./images/banner/8.png'"
+		        onmouseout ="document.Print.src='./images/banner/8Colored.png'">
+				<img src="./images/banner/8Colored.png" border="0" name="Print" title="Print"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			
+			<a target="_top"
+				onmouseover="document.Language.src='./images/banner/10.png'"
+		        onmouseout ="document.Language.src='./images/banner/10Colored.png'" >
+				<img src="./images/banner/10Colored.png" id="Language" name="Language" border="0" title="Language"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			
+			<a href="javascript:open_window('VersionInfo.html')"
+				onmouseover="document.VInfo.src='./images/banner/9.png'"
+		        onmouseout ="document.VInfo.src='./images/banner/9Colored.png'">
+			<img src="./images/banner/9Colored.png" border="0" name="VInfo" title="Version Info"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			
+			<A HREF="mailto: support@intelligile.com"
+				onmouseover="document.Mail.src='./images/banner/6.png'"
+		        onmouseout ="document.Mail.src='./images/banner/6Colored.png'">
+			<img src="./images/banner/6Colored.png" border="0" name="Mail" title="Contact us"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			
+			<A HREF="javascript:open_window('HelpFiles/Help.html')"
+				onmouseover="document.Help.src='./images/banner/7.png'"
+		        onmouseout ="document.Help.src='./images/banner/7Colored.png'">
+				<img src="./images/banner/7Colored.png" border="0" name="Help" title="Help"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+		</p>
+	</body>
+</html>
